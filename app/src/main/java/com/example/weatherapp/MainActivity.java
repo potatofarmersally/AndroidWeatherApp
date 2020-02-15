@@ -170,6 +170,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             txtTime.setText(String.format("%s/%s", Common.unixTimeStampToDateTime(openWeatherMap.getSys().getMySunrise()),
                     Common.unixTimeStampToDateTime(openWeatherMap.getSys().getMySunset())));
             txtCelsius.setText(String.format("%.2f C", openWeatherMap.getMain().getMyTemp()));
+            //set text of cloud if it's 1 then it's clear and you can go star gazing if not, say it's bad to go stargazing
             Picasso.get()
                     .load(Common.getImage(openWeatherMap.getWeatherList().get(0).getMyIcon()))
                     .into(imageView);

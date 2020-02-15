@@ -14,7 +14,7 @@ public class Main {
         this.myTempMin = myTempMin;
         this.myTempMax = myTempMax;
     }
-
+//put cloud coverage in here
     public double getMyTemp() {
         return myTemp;
     }
